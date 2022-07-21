@@ -1,8 +1,10 @@
 //Global Varibles
 //
-//float button1X, button1Y, button1Width, button1Height;
-//color backgroundColor;
-//color black = #000000;
+float buttonX1, buttonY1, buttonWidth1, buttonHeight1;
+float buttonX2, buttonY2, buttonWidth2, buttonHeight2;
+float rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight;
+float ellipseDisplayX, ellipseDisplayY, ellipseDisplayXdiameter, ellipseDisplayYdiameter;
+color black = #000000;//Night Mode Friendly
 void setup() 
 {
   //Display Geometry 
@@ -30,6 +32,24 @@ void setup()
     println(instruct);
   }
   //Population using appWidth & appHeight
+  int centerX = appWidth*1/2;
+  int centerY = appHeight*1/2;
+  buttonX1 = centerX - appWidth*1/4;
+  buttonY1 =  centerY + appHeight*1/4;
+  buttonWidth1 = appWidth*1/4;
+  buttonHeight1 = appHeight*1/4;
+  buttonX2 = centerX + appWidth*1/4;
+  buttonY2 = buttonY1; 
+  buttonWidth2 = buttonWidth1; 
+  buttonHeight2 = buttonHeight1 ; 
+  rectDisplayX = buttonX1;
+  rectDisplayY = centerY - appHeight*1/4;  
+  rectDisplayWidth = buttonWidth1;
+  rectDisplayHeight= buttonHeight1;
+  ellipseDisplayX = buttonX2 ;
+  ellipseDisplayY = rectDisplayY ;
+  ellipseDisplayXdiameter = appWidth*1/5;
+  ellipseDisplayYdiameter = appHeight*1/10;
   //
 
 }//End setup
