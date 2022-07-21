@@ -37,10 +37,10 @@ void setup()
 void draw() 
 {
   background(black);
-  rect();
-  rect();
-  rect();//Button 1
-  ellipse();//Button 2
+  rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1);
+  rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2);
+  rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);//Button 1
+  ellipse(ellipseDisplayX, ellipseDisplayY, ellipseDisplayXdiameter, ellipseDisplayYdiameter);//Button 2
   //
   //Text for Buttons
   
